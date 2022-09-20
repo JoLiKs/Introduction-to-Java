@@ -17,4 +17,11 @@ public class LinePrograms
     double res = (Math.sin(x)+Math.cos(y))/(Math.cos(x)-Math.sin(y))*Math.tan(x)*y;
     return res;
 }
+	public static double fourthTask(double a) {
+		    String s = Double.toString(a);
+		    String[] arr = s.split("\\.");
+		    s = arr[1]+"."+arr[0];
+    double res = Double.parseDouble(s); 
+    return res;
+}
 }
