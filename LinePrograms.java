@@ -24,4 +24,13 @@ public class LinePrograms
     double res = Double.parseDouble(s); 
     return res;
 }
+	public static String fifthTask(int a) {
+		    int HH = a/60/60;
+		    int MM = a/60;
+		    int SS = a;
+		    if (HH > 0) MM = (a-3600*HH)/60;
+		    if (MM > 0) SS = (a-60*MM)-3600*HH;
+		String res = "HH"+HH+"MM"+MM+"SS"+SS;
+    return res;
+}
 }
